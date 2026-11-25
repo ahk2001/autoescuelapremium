@@ -1,0 +1,14 @@
+# Vercel
+.vercel
+
+# Arquivos internos de pesquisa/rascunho
+dados.txt
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*

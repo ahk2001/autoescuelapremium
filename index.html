@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Autoescuelas PREMIUM Alicante | Gran Vía · Centro de Formación Vial y del Transporte</title>
+  <meta name="description" content="Autoescuela PREMIUM Gran Vía en Alicante (Av. Pintor Xavier Soler, 1). Matrícula GRATIS online en Permiso B y Moto, Camión C, Tráiler C+E, Autobús D, Cursos CAP, ADR, Carretillero y Recuperación de Puntos DGT con Bolsa de Trabajo.">
+
+  <!-- Favicon Placa 'L' Oficial de Autoescuelas Premium -->
+  <link rel="icon" type="image/png" href="assets/images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/brand/favicon.png">
+
+  <!-- Open Graph / Meta de Compartición -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Autoescuelas PREMIUM Alicante | Gran Vía · Todos los Permisos y CAP">
+  <meta property="og:description" content="Centro de Formación Vial y del Transporte en Alicante. Matrícula GRATIS online en Coche y Moto, Cursos CAP, Camión, Autobús, ADR, Carretillero y Recuperación de Puntos DGT.">
+  <meta property="og:image" content="assets/images/hero/fachada-gran-via.png">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#00A335">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Anybody, Rubik & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       AUTOESCUELAS PREMIUM DESIGN SYSTEM (BASADO EN LA ARQUITECTURA FLEMING)
+       Códigos HEX Oficiales extraídos de dossie_autoescola.md
+       ========================================================================== */
+    :root {
+      /* Superficies Arquitectónicas y Fondo Verde Oficial */
+      --cream-bg-deep: #007A28;
+      --cream-canvas: #F9FBF9;
+      --cream-surface: #EEF4F0;
+      --cream-card: #FFFFFF;
+      --cream-border: #D8E4DC;
+      --cream-border-strong: #B8CBBF;
+
+      /* Colores Oficiales de Marca (logo.png & Elementor post-6.css) */
+      --pill-green: #00A335;          /* Verde Esmeralda Oficial Placa "L" */
+      --pill-green-hover: #007E29;    /* Verde Esmeralda Oscuro Hover */
+      --lime-vibrant: #71E257;        /* Verde Lima Vibrante Web */
+      --lime-facade: #48D000;         /* Verde Lima Fachada y Flota */
+      --whatsapp-green: #00A335;
+      --whatsapp-green-hover: #007E29;
+
+      --pill-accent: #1D1D1D;         /* Primario Oscuro Elementor */
+      --pill-accent-hover: #253239;   /* Antracita Oficial del Logo */
+      --warm-amber: #F24406;          /* Naranja Acción / Urgencia Oficial Elementor */
+      --warm-amber-hover: #D43800;
+      --l-green: #00A335;
+
+      --text-dark: #1D1D1D;
+      --text-body: #253239;
+      --text-muted: #54595F;
+      --text-light: #7A868C;
+
+      --font-main: 'Plus Jakarta Sans', 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Anybody', 'Plus Jakarta Sans', sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, serif;
+
+      --radius-card: 28px;
+      --radius-banner: 22px;
+      --radius-pill: 9999px;
+      --shadow-canvas: 0 25px 60px -15px rgba(29, 29, 29, 0.20), 0 0 0 1px rgba(255, 255, 255, 0.85);
+      --shadow-hover: 0 18px 36px rgba(0, 163, 53, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-main);
+      color: var(--text-dark);
+      background-color: var(--cream-bg-deep);
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ==========================================================================
+       FONDO 3D CANELADO ARQUITECTÓNICO EN VERDE OFICIAL
+       ========================================================================== */
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      background-color: #007A28;
+      background-image: repeating-linear-gradient(
+        to right,
+        #006B22 0px,
+        #007D29 18px,
+        #009431 38px,
+        #00A335 52px,
+        #0BB342 60px,
+        #009932 70px,
+        #007D29 86px,
+        #006B22 100px
+      );
+      background-attachment: fixed;
+      background-size: 100px 100%;
+      padding: 1rem 0.5rem 3rem;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 50% 15%, rgba(113, 226, 87, 0.16) 0%, rgba(0, 46, 15, 0.42) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Letrero monumental translúcido detrás del card */
+    .hero-watermark-title {
+      position: relative;
+      z-index: 1;
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 13.5vw, 10rem);
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.22);
+      text-shadow: 0 4px 28px rgba(0, 46, 15, 0.35);
+      text-align: center;
+      letter-spacing: -0.02em;
+      line-height: 0.9;
+      margin-top: 1rem;
+      margin-bottom: -2.1rem;
+      pointer-events: none;
+      user-select: none;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    .drivepro-container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ==========================================================================
+       CARD PRINCIPAL
+       ========================================================================== */
+    .main-canvas-card {
+      background: var(--cream-canvas);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-canvas);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      position: relative;
+      animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card-sections-body {
+      padding: 0;
+    }
+
+    /* ==========================================================================
+       NAVBAR CON EL LOGO OFICIAL DE AUTOESCUELAS PREMIUM
+       ========================================================================== */
+    .card-navbar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-bottom: 1px solid var(--cream-border);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.2rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .brand-group {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .brand-logo-img {
+      height: 46px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .brand-group:hover .brand-logo-img {
+      transform: scale(1.02);
+      opacity: 0.92;
+    }
+
+    .navbar-right-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .pill-phone-free {
+      display: none;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--cream-surface);
+      border: 1px solid var(--cream-border-strong);
+      color: var(--text-dark);
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 0.65rem 1.1rem;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .pill-phone-free span.free-tag {
+      background: var(--lime-vibrant);
+      color: var(--text-dark);
+      font-size: 0.68rem;
+      font-weight: 900;
+      padding: 2px 6px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+    .pill-phone-free:hover {
+      border-color: var(--pill-green);
+      background: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    /* Links Centrales (Desktop) */
+    .desktop-nav-wrap {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      list-style: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-body);
+    }
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--pill-green);
+    }
+
+    /* Botón Hamburguesa Mobile */
+    .mobile-menu-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      background: var(--cream-surface);
+      border: 1px solid var(--cream-border-strong);
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s ease;
+      flex-shrink: 0;
+    }
+    .mobile-menu-btn:hover {
+      background: #DFECE3;
+    }
+    .mobile-menu-btn span {
+      width: 20px;
+      height: 2px;
+      background-color: var(--text-dark);
+      border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+    .mobile-menu-btn.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .mobile-menu-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .mobile-menu-btn.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Menú Gaveta Mobile */
+    .mobile-drawer {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--cream-border);
+      animation: menuDrawerFade 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .mobile-drawer.open {
+      display: flex;
+    }
+
+    @keyframes menuDrawerFade {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      width: 100%;
+    }
+    .mobile-nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0.65rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      border-radius: 10px;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid rgba(216, 228, 220, 0.6);
+    }
+    .mobile-nav-item:hover {
+      background: var(--cream-surface);
+      color: var(--pill-green);
+      transform: translateX(3px);
+    }
+    .mobile-nav-item svg {
+      color: var(--text-light);
+    }
+
+    .mobile-drawer-btn {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.92rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 14px rgba(0, 163, 53, 0.30);
+      border-radius: var(--radius-pill);
+    }
+
+    .pill-btn-green {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: var(--pill-green);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 14px rgba(0, 163, 53, 0.32);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .pill-btn-green:hover {
+      background-color: var(--pill-green-hover);
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 8px 24px rgba(0, 163, 53, 0.42);
+    }
+
+    /* ==========================================================================
+       BANNER HERO INTERNO LIMPIO Y DIRECTO
+       ========================================================================== */
+    .hero-banner-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-banner {
+      width: 100%;
+      min-height: 400px;
+      height: calc(100vh - 255px);
+      max-height: 640px;
+      border-radius: var(--radius-banner);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2.5rem 2.25rem;
+      background: #1D1D1D;
+      border: 1px solid var(--cream-border-strong);
+    }
+
+    .hero-banner-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.86) contrast(1.06);
+      transition: transform 0.8s ease;
+    }
+    .hero-banner:hover .hero-banner-bg {
+      transform: scale(1.03);
+    }
+
+    .hero-banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(16, 22, 24, 0.52) 0%, rgba(16, 22, 24, 0) 28%),
+        linear-gradient(to top, rgba(16, 22, 24, 0.90) 0%, rgba(16, 22, 24, 0.45) 38%, rgba(16, 22, 24, 0.05) 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+    }
+
+    .hero-badges-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+    }
+
+    .hero-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-tag-badge.promo-orange {
+      background: var(--warm-amber);
+      border-color: var(--warm-amber);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(242, 68, 6, 0.45);
+    }
+
+    .hero-tag-badge.dgt-lime {
+      background: rgba(0, 163, 53, 0.35);
+      border-color: var(--lime-vibrant);
+      color: var(--lime-vibrant);
+    }
+
+    .hero-banner-title {
+      font-size: clamp(2.1rem, 4.8vw, 3.75rem);
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-bottom: 0;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+      animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    }
+    .hero-banner-title em {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--lime-vibrant);
+      font-size: 1.08em;
+    }
+
+    .hero-banner-desc {
+      font-size: clamp(0.95rem, 1.75vw, 1.12rem);
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.55;
+      margin-bottom: 1.85rem;
+      font-weight: 500;
+      animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    }
+
+    .hero-banner-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+    }
+
+    .btn-hero-courses {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background-color: var(--pill-green);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.75rem 1.45rem;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 14px rgba(0, 163, 53, 0.45);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .btn-hero-courses:hover {
+      background-color: var(--pill-green-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 163, 53, 0.55);
+    }
+    .btn-hero-courses.btn-hero-secondary {
+      background-color: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: none;
+    }
+    .btn-hero-courses.btn-hero-secondary:hover {
+      background-color: #FFFFFF;
+      color: var(--text-dark);
+    }
+    .btn-hero-courses svg {
+      transition: transform 0.2s ease;
+    }
+    .btn-hero-courses:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* Prova Social Flotante */
+    .social-proof-pill {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.6rem 1.15rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--cream-border);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.28);
+      animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+    }
+    .avatar-stack {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .avatar-stack img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      margin-left: -8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .avatar-stack img:first-child {
+      margin-left: 0;
+    }
+    .proof-text-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+    .proof-title {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+    .proof-stars {
+      font-size: 0.74rem;
+      color: var(--warm-amber);
+      letter-spacing: 0.5px;
+      font-weight: 800;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       FRANJA DE ESTADÍSTICAS
+       ========================================================================== */
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cream-border);
+    }
+    .stat-box {
+      background: var(--cream-surface);
+      border: 1px solid var(--cream-border);
+      border-radius: 14px;
+      padding: 1.1rem 0.75rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      transition: all 0.25s ease;
+    }
+    .stat-box:hover {
+      background: var(--cream-card);
+      border-color: var(--pill-green);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 163, 53, 0.08);
+    }
+    .stat-num {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--text-dark);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-body);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    /* ==========================================================================
+       SECCIONES INTERNAS DEL CARD
+       ========================================================================== */
+    .courses-section,
+    .catalog-section,
+    .prof-hub-section,
+    .steps-section,
+    .students-gallery-section,
+    .testimonials-section {
+      margin-top: 3.5rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--cream-border);
+    }
+
+    .section-header-center {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.25rem;
+    }
+    .section-kicker {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--pill-green);
+      background: rgba(0, 163, 53, 0.1);
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 0.65rem;
+    }
+    .section-headline {
+      font-size: clamp(1.75rem, 3.5vw, 2.45rem);
+      font-weight: 900;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .section-subtext {
+      color: var(--text-body);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       CARDS VISUALES DE FORMACIÓN (3 CARDS CON FOTOS REALES DE ASSETS/)
+       ========================================================================== */
+    .place-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+
+    .place-card {
+      background: var(--cream-card);
+      border: 1px solid var(--cream-border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(29, 29, 29, 0.06);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .place-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--pill-green);
+      box-shadow: 0 20px 40px -10px rgba(0, 163, 53, 0.14);
+    }
+
+    .place-card-image-wrap {
+      position: relative;
+      height: 235px;
+      overflow: hidden;
+      background: #1D1D1D;
+    }
+    .place-card-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 2;
+      background: var(--warm-amber);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    .place-card-badge.badge-green {
+      background: var(--pill-green);
+    }
+    .place-card-badge.badge-dark {
+      background: var(--pill-accent);
+    }
+    .place-card-cover-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .place-card:hover .place-card-cover-img {
+      transform: scale(1.05);
+    }
+
+    .place-card-body {
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex: 1;
+      justify-content: space-between;
+    }
+    .place-card-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+    .place-card-desc {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    .place-card-footer {
+      padding-top: 1rem;
+      border-top: 1px solid var(--cream-border);
+      margin-top: 0.5rem;
+    }
+
+    .btn-place-book {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 0.5rem;
+      background: var(--pill-green);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.75rem 1.2rem;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-place-book:hover {
+      background: var(--pill-green-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(0, 163, 53, 0.35);
+    }
+    .btn-place-book .arrow-svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.2s ease;
+    }
+    .btn-place-book:hover .arrow-svg {
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       SECCIÓN DE PERMISOS ESTILO MARQUEE DUAL (TIPO MECA)
+       ========================================================================== */
+    .meca-permits-band {
+      margin-top: 3.5rem;
+      background: linear-gradient(135deg, #0D1114 0%, #151C20 100%);
+      border-radius: var(--radius-banner);
+      padding: 3.75rem 0 3.5rem;
+      color: #FFFFFF;
+      overflow: hidden;
+      border: 1px solid rgba(113, 226, 87, 0.22);
+      box-shadow: 0 20px 45px -12px rgba(13, 17, 20, 0.45);
+    }
+
+    .meca-permits-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2.75rem;
+      padding: 0 1.5rem;
+    }
+
+    .meca-permits-title {
+      font-size: clamp(1.9rem, 4vw, 2.95rem);
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 1rem;
+    }
+
+    .meca-permits-title span {
+      display: block;
+      color: var(--lime-vibrant);
+    }
+
+    .meca-permits-sub {
+      font-size: 0.96rem;
+      color: #94A3B8;
+      line-height: 1.6;
+    }
+
+    .meca-marquee-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1.35rem;
+      width: 100%;
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+
+    .meca-marquee-row {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      will-change: transform;
+    }
+
+    .meca-marquee-row.row-left {
+      animation: mecaScrollLeft 36s linear infinite;
+    }
+
+    .meca-marquee-row.row-right {
+      animation: mecaScrollRight 38s linear infinite;
+    }
+
+    .meca-marquee-wrap:hover .meca-marquee-row {
+      animation-play-state: paused;
+    }
+
+    @keyframes mecaScrollLeft {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    @keyframes mecaScrollRight {
+      0% { transform: translate3d(-50%, 0, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
+
+    .meca-marquee-group {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      padding-right: 1.75rem;
+    }
+
+    .meca-permit-link {
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.3vw, 1.65rem);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #94A3B8;
+      white-space: nowrap;
+      transition: color 0.25s ease, transform 0.25s ease;
+      display: inline-block;
+    }
+
+    .meca-permit-link:hover {
+      color: #FFFFFF;
+      transform: scale(1.03);
+    }
+
+    .meca-permit-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--lime-vibrant);
+      box-shadow: 0 0 8px rgba(113, 226, 87, 0.7);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       CATÁLOGO EXHAUSTIVO DE PERMISOS DGT (CARDS PARA HUB PROFESIONAL)
+       ========================================================================== */
+    .permits-catalog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .permit-detail-card {
+      background: var(--cream-card);
+      border: 1px solid var(--cream-border);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 18px rgba(29, 29, 29, 0.04);
+    }
+    .permit-detail-card:hover {
+      border-color: var(--pill-green);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(0, 163, 53, 0.10);
+    }
+
+    .permit-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+    .permit-badge-code {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--pill-green);
+      color: #FFFFFF;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.3rem 0.75rem;
+      border-radius: 8px;
+      letter-spacing: 0.03em;
+    }
+    .permit-tag-right {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--warm-amber);
+      background: rgba(242, 68, 6, 0.1);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+    }
+    .permit-tag-right.tag-green {
+      color: var(--pill-green);
+      background: rgba(0, 163, 53, 0.1);
+    }
+
+    .permit-detail-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 0.4rem;
+    }
+    .permit-detail-desc {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+    }
+    .permit-req-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--cream-border);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .permit-req-list li::before {
+      content: "✓ ";
+      color: var(--pill-green);
+      font-weight: 900;
+    }
+
+    /* ==========================================================================
+       HUB PROFESIONAL: PACKS CAP, ADR, CARRETILLERO Y PUNTOS DGT
+       ========================================================================== */
+    .packs-banner-highlight {
+      background: linear-gradient(135deg, #16221B 0%, #253239 100%);
+      color: #FFFFFF;
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(113, 226, 87, 0.3);
+      box-shadow: 0 14px 32px rgba(29, 29, 29, 0.18);
+    }
+    .packs-banner-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .packs-banner-title {
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+    .packs-banner-title span {
+      color: var(--lime-vibrant);
+    }
+    .packs-4-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      margin-bottom: 1.35rem;
+    }
+    .pack-item-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 14px;
+      padding: 1rem;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .pack-item-box:hover {
+      background: rgba(255, 255, 255, 0.13);
+      border-color: var(--lime-vibrant);
+    }
+    .pack-item-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--lime-vibrant);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .pack-item-name {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 0.25rem;
+    }
+    .pack-item-sub {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.4;
+    }
+
+    .prof-special-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    /* ==========================================================================
+       EL MÉTODO PREMIUM (3 PASOS CLAROS)
+       ========================================================================== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .step-card {
+      background: var(--cream-surface);
+      border: 1px solid var(--cream-border);
+      border-radius: 18px;
+      padding: 1.85rem;
+      position: relative;
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    }
+    .step-card:hover {
+      background: var(--cream-card);
+      border-color: var(--pill-green);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0, 163, 53, 0.08);
+    }
+    .step-num {
+      width: 38px;
+      height: 38px;
+      background: var(--cream-card);
+      border: 1px solid var(--cream-border-strong);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--pill-green);
+      margin-bottom: 1rem;
+    }
+    .step-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 0.45rem;
+    }
+    .step-text {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       GALERÍA DE ALUMNOS CON SU 'L' (MARQUEE INFINITO)
+       ========================================================================== */
+    .gallery-marquee-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 2rem 0 1.25rem;
+      padding: 0.5rem 0;
+      mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    }
+
+    .gallery-marquee-track {
+      display: flex;
+      gap: 1.25rem;
+      width: max-content;
+      animation: marqueeInfinite 38s linear infinite;
+      will-change: transform;
+    }
+    .gallery-marquee-container:hover .gallery-marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes marqueeInfinite {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    .student-photo-card {
+      width: 260px;
+      height: 330px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(29, 29, 29, 0.10);
+      border: 2px solid var(--cream-card);
+      background: var(--cream-surface);
+      position: relative;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+    }
+    .student-photo-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 16px 36px rgba(0, 163, 53, 0.18);
+    }
+
+    .student-pure-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .student-photo-card:hover .student-pure-img {
+      transform: scale(1.05);
+    }
+
+    .gallery-instagram-link-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .gallery-instagram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--pill-green);
+      font-size: 0.92rem;
+      font-weight: 800;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .gallery-instagram-link:hover {
+      color: var(--pill-green-hover);
+      transform: translateX(2px);
+    }
+
+    /* ==========================================================================
+       SECCIÓN DE RESEÑAS REALES DE GOOGLE (4,7 ★ EN GRAN VÍA ALICANTE)
+       ========================================================================== */
+    .testimonial-showcase-wrapper {
+      max-width: 840px;
+      margin: 2rem auto 0;
+      position: relative;
+      padding: 0 24px;
+    }
+    .testimonial-showcase-box {
+      background: var(--cream-card);
+      border: 1px solid var(--cream-border);
+      border-radius: 24px;
+      padding: 3.25rem 2.5rem 2.5rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 12px 35px -5px rgba(29, 29, 29, 0.07);
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .testim-big-quote-icon {
+      margin-bottom: 1.25rem;
+      color: var(--pill-green);
+      opacity: 0.35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .testim-big-quote-icon svg {
+      width: 42px;
+      height: 42px;
+      fill: currentColor;
+    }
+    .testim-slides-container {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .testim-slide {
+      display: none;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      width: 100%;
+    }
+    .testim-slide.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      animation: testimFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    @keyframes testimFadeIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .testim-quote-paragraph {
+      font-size: clamp(1.02rem, 2.1vw, 1.22rem);
+      line-height: 1.65;
+      font-weight: 500;
+      color: var(--text-dark);
+      max-width: 680px;
+      margin: 0 auto 1.75rem;
+    }
+    .testim-author-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .testim-avatar-img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--cream-card);
+      box-shadow: 0 4px 14px rgba(29, 29, 29, 0.14), 0 0 0 2px var(--pill-green);
+    }
+    .testim-author-name {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+    .testim-author-sub {
+      font-size: 0.8rem;
+      color: var(--warm-amber);
+      font-weight: 700;
+    }
+    .testim-indicators {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.85rem;
+    }
+    .testim-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: var(--cream-border-strong);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .testim-dot.active {
+      width: 28px;
+      background: var(--pill-green);
+    }
+    .testim-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--cream-card);
+      border: 1px solid var(--cream-border-strong);
+      color: var(--text-body);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(29, 29, 29, 0.08);
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .testim-nav-arrow:hover {
+      background: var(--cream-surface);
+      color: var(--pill-green);
+      border-color: var(--pill-green);
+      transform: translateY(-50%) scale(1.06);
+    }
+    .testim-arrow-prev { left: -21px; }
+    .testim-arrow-next { right: -21px; }
+
+    /* ==========================================================================
+       SECCIÓN DE CONTACTO Y SEDE FÍSICA GRAN VÍA ALICANTE
+       ========================================================================== */
+    .contact-card-banner {
+      margin-top: 3.5rem;
+      background: linear-gradient(135deg, #161D20 0%, #253239 100%);
+      border: 1px solid rgba(113, 226, 87, 0.25);
+      border-radius: var(--radius-banner);
+      padding: 3rem 2.5rem;
+      color: #F9FBF9;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 40px -10px rgba(29, 29, 29, 0.40);
+    }
+    .contact-banner-title {
+      font-size: clamp(1.6rem, 3.2vw, 2.35rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.65rem;
+      color: #FFFFFF;
+    }
+    .contact-banner-desc {
+      color: rgba(249, 251, 249, 0.85);
+      font-size: 0.94rem;
+      line-height: 1.55;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+    }
+    .contact-info-clean {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .contact-info-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+    .contact-info-row:last-child {
+      border-bottom: none;
+    }
+    .contact-row-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(0, 163, 53, 0.28);
+      border: 1px solid rgba(113, 226, 87, 0.5);
+      color: var(--lime-vibrant);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-row-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .contact-row-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.3;
+    }
+    .contact-row-title a {
+      color: #FFFFFF;
+      text-decoration: underline;
+      text-decoration-color: rgba(113, 226, 87, 0.55);
+    }
+    .contact-row-sub {
+      font-size: 0.76rem;
+      color: #B8CBBF;
+      font-weight: 500;
+    }
+
+    .contact-banner-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: stretch;
+      width: 100%;
+    }
+    .contact-btn-wa {
+      padding: 0.95rem 1.5rem;
+      font-size: 0.92rem;
+      text-align: center;
+      width: 100%;
+      justify-content: center;
+    }
+    .btn-maps-high-contrast {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s ease;
+      backdrop-filter: blur(8px);
+      width: 100%;
+    }
+    .btn-maps-high-contrast:hover {
+      background: rgba(255, 255, 255, 0.20);
+      border-color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    /* Rodapé */
+    .card-footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cream-border);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .footer-social-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer-social-links a {
+      color: var(--pill-green);
+      font-weight: 700;
+    }
+
+    /* Botón Flotante de WhatsApp */
+    .mobile-float-wa {
+      position: fixed;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      right: 16px;
+      z-index: 1000;
+      background-color: var(--whatsapp-green);
+      color: #FFFFFF;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(29, 29, 29, 0.35), 0 0 0 3px var(--cream-card);
+      transition: transform 0.2s ease;
+      animation: pulseRipple 2.5s infinite;
+    }
+    .mobile-float-wa:hover {
+      transform: scale(1.08);
+      background-color: var(--whatsapp-green-hover);
+    }
+    .mobile-float-wa svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
+    }
+
+    /* Animaciones */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes cardAppear {
+      from { opacity: 0; transform: translateY(30px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes pulseRipple {
+      0% { box-shadow: 0 0 0 0 rgba(0, 163, 53, 0.55); }
+      70% { box-shadow: 0 0 0 14px rgba(0, 163, 53, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 163, 53, 0); }
+    }
+
+    /* ==========================================================================
+       RESPONSIVIDAD MOBILE & DESKTOP
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .testim-nav-arrow {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-watermark-title {
+        display: block !important;
+        font-size: clamp(2.6rem, 15vw, 4.6rem);
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.22);
+        text-align: center;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        margin-top: 0.75rem;
+        margin-bottom: 0.35rem;
+      }
+      body {
+        padding: 0.45rem 0.35rem calc(2rem + env(safe-area-inset-bottom, 0px));
+      }
+      .main-canvas-card {
+        padding: 0.75rem 0.75rem 1.25rem;
+        border-radius: 18px;
+      }
+      .card-sections-body {
+        padding: 0 0.35rem;
+      }
+      .card-navbar {
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid var(--cream-border);
+      }
+      .brand-group {
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+      }
+      .brand-logo-img {
+        height: 36px;
+      }
+      .desktop-nav-wrap,
+      .navbar-right-actions .desktop-only-cta,
+      .pill-phone-free {
+        display: none !important;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      /* HERO MOBILE HORIZONTAL: IMAGEM AMPLA SEM CORTES */
+      .hero-banner-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.85rem;
+      }
+
+      .hero-banner {
+        width: 100%;
+        min-height: 230px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        padding: 1rem 0.95rem 0.85rem;
+        border-radius: 16px;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      .hero-banner-bg {
+        filter: brightness(0.95) contrast(1.04);
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .hero-banner::after {
+        background: linear-gradient(
+          to top,
+          rgba(18, 23, 26, 0.90) 0%,
+          rgba(18, 23, 26, 0.52) 34%,
+          rgba(18, 23, 26, 0.12) 60%,
+          rgba(18, 23, 26, 0) 80%
+        );
+      }
+
+      .hero-banner-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 100%;
+        margin-top: auto;
+      }
+
+      .hero-badges-inline {
+        margin-bottom: 0.35rem;
+      }
+      .hero-tag-badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.6rem;
+      }
+
+      .hero-banner-title {
+        font-size: clamp(1.18rem, 4.5vw, 1.5rem);
+        line-height: 1.15;
+        margin-bottom: 0;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+      }
+
+      .hero-banner-desc {
+        display: none !important;
+      }
+
+      .desktop-hero-actions {
+        display: none !important;
+      }
+
+      .hero-mobile-actions {
+        display: flex !important;
+        width: 100%;
+      }
+      .btn-hero-mobile-cta {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.25rem;
+        background-color: var(--pill-green);
+        color: #ffffff;
+        font-size: 0.94rem;
+        font-weight: 700;
+        border-radius: 14px;
+        box-shadow: 0 4px 14px rgba(0, 163, 53, 0.28);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+      .btn-hero-mobile-cta:hover {
+        background-color: var(--pill-green-hover);
+        transform: translateY(-2px);
+      }
+
+      .hero-banner-wrapper .social-proof-pill {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.65rem 1rem;
+        background: var(--cream-card);
+        border: 1px solid var(--cream-border);
+        box-shadow: 0 4px 14px rgba(29, 29, 29, 0.06);
+        border-radius: var(--radius-pill);
+      }
+      .avatar-stack img {
+        width: 28px;
+        height: 28px;
+        margin-left: -7px;
+      }
+      .proof-title {
+        font-size: 0.78rem;
+      }
+      .proof-stars {
+        font-size: 0.72rem;
+      }
+
+      .stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.65rem;
+        margin-top: 1.25rem;
+        padding-top: 0;
+        border-top: none;
+      }
+      .stat-box {
+        border-radius: 12px;
+        padding: 0.85rem 0.5rem;
+      }
+      .stat-num {
+        font-size: 1.5rem;
+      }
+      .stat-label {
+        font-size: 0.72rem;
+      }
+
+      .courses-section, .catalog-section, .prof-hub-section, .steps-section, .students-gallery-section, .testimonials-section {
+        margin-top: 2.25rem;
+        padding-top: 1.75rem;
+      }
+      .section-headline {
+        font-size: 1.55rem;
+      }
+      .packs-banner-highlight {
+        padding: 1.25rem;
+      }
+      .student-photo-card {
+        width: 205px;
+        height: 260px;
+        border-radius: 16px;
+      }
+      .testimonial-showcase-wrapper {
+        padding: 0;
+      }
+      .testimonial-showcase-box {
+        padding: 2.25rem 1.15rem 1.75rem;
+        min-height: auto;
+        border-radius: 18px;
+      }
+      .testim-quote-paragraph {
+        font-size: 0.98rem;
+        line-height: 1.55;
+        margin-bottom: 1.5rem;
+      }
+      .contact-card-banner {
+        padding: 1.6rem 1.1rem;
+        border-radius: 16px;
+        gap: 1.25rem;
+      }
+      .contact-banner-title {
+        font-size: clamp(1.35rem, 5.5vw, 1.65rem);
+      }
+      .card-footer {
+        padding-bottom: 4.5rem;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .place-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .permits-catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .packs-4-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .prof-special-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .mobile-menu-btn {
+        display: none !important;
+      }
+      .mobile-drawer {
+        display: none !important;
+      }
+      .desktop-nav-wrap {
+        display: flex;
+      }
+      .navbar-right-actions .desktop-only-cta {
+        display: inline-flex !important;
+      }
+      .contact-card-banner {
+        grid-template-columns: 1.3fr 1fr;
+      }
+      .card-footer {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .hero-mobile-actions {
+        display: none !important;
+      }
+      .desktop-hero-actions {
+        display: flex !important;
+      }
+      .hero-banner-wrapper {
+        position: relative;
+        width: 100%;
+      }
+      .hero-banner-wrapper .social-proof-pill,
+      .social-proof-pill {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        z-index: 3;
+      }
+    }
+
+    @media (min-width: 980px) {
+      .pill-phone-free {
+        display: inline-flex;
+      }
+      .permits-catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .packs-4-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .prof-special-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Letrero Monumental de Fondo Translúcido -->
+  <div class="hero-watermark-title" aria-hidden="true">PREMIUM</div>
+
+  <div class="drivepro-container">
+
+    <!-- ========================================================================
+         CARD PRINCIPAL ARQUITECTÓNICO
+         ======================================================================== -->
+    <div class="main-canvas-card">
+
+      <!-- Navbar Interna con el Logo Oficial en la Esquina Superior Izquierda -->
+      <header class="card-navbar">
+        <div class="navbar-header-row">
+          <a href="#" class="brand-group" aria-label="Autoescuelas Premium Alicante Inicio">
+            <img src="assets/images/brand/logo.png" alt="Autoescuelas PREMIUM Alicante" class="brand-logo-img">
+          </a>
+
+          <!-- Acciones Derecha -->
+          <div class="navbar-right-actions">
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%F0%9F%91%8B%20He%20visto%20en%20vuestra%20web%20la%20promoci%C3%B3n%20de%20Matr%C3%ADcula%20GRATIS%20online%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20precios%20y%20horarios%20en%20Alicante."
+               class="pill-btn-green desktop-only-cta"
+               target="_blank"
+               rel="noopener noreferrer">
+              Matrícula Gratis Online
+            </a>
+
+            <!-- Botón Menú Mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menú Drawer Mobile -->
+        <div class="mobile-drawer" id="mobileDrawer">
+          <nav class="mobile-nav-list">
+            <a href="#cursos" class="mobile-nav-item">
+              <span>Formación y Matrícula Gratis Online</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#permisos" class="mobile-nav-item">
+              <span>Catálogo de Permisos (Coche, Moto, Camión, Autobús)</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#profesional" class="mobile-nav-item">
+              <span>Cursos CAP, Packs Ahorro, ADR, Carretillero y Puntos</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#proceso" class="mobile-nav-item">
+              <span>El Método Premium</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#alumnos-l" class="mobile-nav-item">
+              <span>Alumnos Aprobados con su 'L'</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#opiniones" class="mobile-nav-item">
+              <span>Reseñas en Google (4,7 ★)</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#contacto" class="mobile-nav-item">
+              <span>Sede Gran Vía Alicante y Horarios</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </nav>
+
+          <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%F0%9F%91%8B%20Quiero%20informarme%20para%20sacarme%20el%20carnet%20de%20conducir%20en%20Alicante"
+             class="pill-btn-green mobile-drawer-btn"
+             target="_blank"
+             rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.21 8.21 0 0 1-5.82 2.41h-.01c-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.196 8.196 0 0 1-1.26-4.47c0-4.54 3.7-8.25 8.24-8.25m4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.09 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3"/></svg>
+            <span>Matrícula Gratis · WhatsApp</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- ======================================================================
+           HERO BANNER REDONDEADO LIMPIO CON FACHADA REAL DE ALICANTE
+           ====================================================================== -->
+      <div class="hero-banner-wrapper">
+        <section class="hero-banner" id="hero">
+          <img src="assets/images/hero/fachada-gran-via.png"
+               alt="Fachada de Autoescuelas PREMIUM en Alicante con rótulo oficial y teléfono 965 24 35 28"
+               class="hero-banner-bg"
+               loading="eager">
+
+          <div class="hero-banner-content">
+            <h1 class="hero-banner-title">
+              Aprende a tu ritmo.<br><em>Conduce Premium.</em>
+            </h1>
+          </div>
+        </section>
+
+        <!-- Prueba Social Flotante -->
+        <div class="social-proof-pill">
+          <div class="avatar-stack">
+            <img src="assets/images/students/aprobada-fachada-1.png" alt="Alumna aprobada con su L en Autoescuelas Premium Alicante">
+            <img src="assets/images/students/aprobado-vw-golf.png" alt="Alumno aprobado junto al Volkswagen Golf de Autoescuelas Premium">
+            <img src="assets/images/students/aprobadas-coche-l.png" alt="Alumnas con su placa L en Alicante">
+            <img src="assets/images/students/aprobado-fachada-2.png" alt="Alumno aprobado en sede Gran Vía">
+          </div>
+          <div class="proof-text-wrap">
+            <span class="proof-title">Alumnos con su 'L' en Alicante</span>
+            <span class="proof-stars">★★★★★ 4,7 / 5 Google (Gran Vía)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================================
+           FRANJA DE ESTADÍSTICAS REALES DEL DOSSIER
+           ====================================================================== -->
+      <div class="card-sections-body">
+      <div class="stats-strip reveal">
+        <div class="stat-box">
+          <span class="stat-num" style="color: var(--warm-amber);">0 €</span>
+          <span class="stat-label">Matrícula Online (Coche y Moto)</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" style="color: var(--pill-green);">4,7 ★</span>
+          <span class="stat-label">+150 Reseñas en Gran Vía</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" style="color: var(--text-dark);">Empleo</span>
+          <span class="stat-label">Bolsa de Trabajo Transporte</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num" style="color: var(--l-green);">900</span>
+          <span class="stat-label">Línea Gratuita 900 696 596</span>
+        </div>
+      </div>
+
+      <!-- ======================================================================
+           SECCIÓN 1: PILARES DE FORMACIÓN (3 CARDS VISUALES CON FOTOS REALES)
+           ====================================================================== -->
+      <section class="courses-section" id="cursos">
+        <div class="section-header-center reveal">
+          <span class="section-kicker">UN CENTRO DE FORMACIÓN PREMIUM</span>
+          <h2 class="section-headline">De la Teoría a la Carretera</h2>
+          <p class="section-subtext">¡Tu aprobado es nuestro objetivo, pero tu satisfacción es lo más importante! Enseñanza adaptada a tus horarios en el corazón de Alicante.</p>
+        </div>
+
+        <div class="place-cards-grid">
+
+          <!-- CARD 1: AULA TEÓRICA & PLATAFORMA ONLINE -->
+          <article class="place-card reveal delay-1">
+            <div class="place-card-image-wrap">
+              <span class="place-card-badge">MATRÍCULA GRATIS ONLINE</span>
+              <img src="assets/images/facilities/aula-teorica.webp"
+                   alt="Aula teórica informatizada de Autoescuelas Premium en Alicante"
+                   class="place-card-cover-img"
+                   loading="lazy">
+            </div>
+
+            <div class="place-card-body">
+              <div>
+                <h3 class="place-card-title">Teórica Presencial y Aula Virtual</h3>
+                <p class="place-card-desc">
+                  Ordenadores individuales en aula climatizada, plataforma online 24/7 actualizada con la normativa DGT (sistemas ADAS) y reglas mnemotécnicas con Pilar, Miriam e Inma para aprobar con cero fallos.
+                </p>
+              </div>
+
+              <div class="place-card-footer">
+                <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Me%20gustar%C3%ADa%20aprovechar%20la%20Matr%C3%ADcula%20GRATIS%20online%20para%20empezar%20con%20la%20te%C3%B3rica%20en%20Alicante."
+                   class="btn-place-book"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <span>Matricularme Online Gratis</span>
+                  <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: PRÁCTICAS EN FLOTA MODERNA -->
+          <article class="place-card reveal delay-2">
+            <div class="place-card-image-wrap">
+              <span class="place-card-badge badge-green">FLOTA VW GOLF &amp; MOTOS</span>
+              <img src="assets/images/students/aprobado-vw-golf.png"
+                   alt="Alumno aprobado junto a su profesor y el coche Volkswagen Golf de Autoescuelas Premium"
+                   class="place-card-cover-img"
+                   loading="lazy">
+            </div>
+
+            <div class="place-card-body">
+              <div>
+                <h3 class="place-card-title">Aprendizaje Práctico sin Miedos</h3>
+                <p class="place-card-desc">
+                  Paciencia infinita, confianza y seguridad al volante con Juan, Alberto, Ari, Manuel y Vicente. Prácticas en Volkswagen Golf modernos y motos para tu carnet o tus oposiciones a Policía Local en Alicante.
+                </p>
+              </div>
+
+              <div class="place-card-footer">
+                <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informarme%20sobre%20el%20Permiso%20B%20y%20las%20clases%20pr%C3%A1cticas%20en%20Alicante%20Gran%20V%C3%ADa."
+                   class="btn-place-book"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <span>Reservar mis prácticas</span>
+                  <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: SECRETARÍA, CAP Y BOLSA DE EMPLEO -->
+          <article class="place-card reveal delay-3">
+            <div class="place-card-image-wrap">
+              <span class="place-card-badge badge-dark">GRAN VÍA ALICANTE</span>
+              <img src="assets/images/facilities/recepcion-gran-via.webp"
+                   alt="Recepción y secretaría de Autoescuela PREMIUM Gran Vía en Alicante"
+                   class="place-card-cover-img"
+                   loading="lazy">
+            </div>
+
+            <div class="place-card-body">
+              <div>
+                <h3 class="place-card-title">Atención Cercana y Transporte CAP</h3>
+                <p class="place-card-desc">
+                  Tarifas explicadas al detalle sin sorpresas, flexibilidad de horarios de mañana y tarde con Bea, Mónica, María y Mario, y acceso directo a nuestra Bolsa de Trabajo para conductores profesionales.
+                </p>
+              </div>
+
+              <div class="place-card-footer">
+                <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quisiera%20orientaci%C3%B3n%20sobre%20vuestros%20permisos%20y%20cursos%20profesionales%20en%20Alicante."
+                   class="btn-place-book"
+                   style="background: var(--pill-accent);"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <span>Hablar con Secretaría</span>
+                  <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           SECCIÓN 2: PERMISOS DE CONDUCIR Y FORMACIÓN VIAL (MARQUEE DUAL ESTILO MECA)
+           ====================================================================== -->
+      <section class="meca-permits-band reveal" id="permisos">
+        <div class="meca-permits-header">
+          <h2 class="meca-permits-title">
+            Permisos de Conducir y
+            <span>Formación Vial</span>
+          </h2>
+          <p class="meca-permits-sub">
+            Desde el Permiso B (coche) y Motos (AM, A1, A2, A) hasta Camión C, Tráiler C+E, Autobús D, CAP, ADR, Carretillero y Recuperación de Puntos. Haz clic en cualquier especialidad para consultar por WhatsApp.
+          </p>
+        </div>
+
+        <div class="meca-marquee-wrap">
+          <!-- Fila 1: Movimiento hacia la izquierda -->
+          <div class="meca-marquee-row row-left">
+            <div class="meca-marquee-group">
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20Permiso%20B%20(Coche)%20con%20Matr%C3%ADcula%20GRATIS%20online%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">PERMISO B · COCHE (MATRÍCULA GRATIS)</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20los%20Permisos%20de%20Moto%20(AM%2C%20A1%2C%20A2%20y%20Curso%20A)%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">MOTOS AM · A1 · A2 · CURSO A</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Estoy%20interesado%20en%20el%20carnet%20de%20moto%20para%20Oposiciones%20a%20Polic%C3%ADa%20Local%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">OPOSICIONES POLICÍA LOCAL</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Solicito%20informaci%C3%B3n%20sobre%20el%20Permiso%20C%20de%20Cami%C3%B3n%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">CAMIÓN C1 / C</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Deseo%20informaci%C3%B3n%20sobre%20el%20Permiso%20C%2BE%20de%20Tr%C3%A1iler%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">TRÁILER C+E</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Solicito%20informaci%C3%B3n%20sobre%20el%20Permiso%20D%20de%20Autob%C3%BAs%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">AUTOBÚS D1 / D</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20Permiso%20B%2BE%20de%20Remolque%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">REMOLQUE B+E</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+            </div>
+            <!-- Clone Fila 1 -->
+            <div class="meca-marquee-group" aria-hidden="true">
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20Permiso%20B%20(Coche)%20con%20Matr%C3%ADcula%20GRATIS%20online%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">PERMISO B · COCHE (MATRÍCULA GRATIS)</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20los%20Permisos%20de%20Moto%20(AM%2C%20A1%2C%20A2%20y%20Curso%20A)%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">MOTOS AM · A1 · A2 · CURSO A</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Estoy%20interesado%20en%20el%20carnet%20de%20moto%20para%20Oposiciones%20a%20Polic%C3%ADa%20Local%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">OPOSICIONES POLICÍA LOCAL</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Solicito%20informaci%C3%B3n%20sobre%20el%20Permiso%20C%20de%20Cami%C3%B3n%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">CAMIÓN C1 / C</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Deseo%20informaci%C3%B3n%20sobre%20el%20Permiso%20C%2BE%20de%20Tr%C3%A1iler%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">TRÁILER C+E</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Solicito%20informaci%C3%B3n%20sobre%20el%20Permiso%20D%20de%20Autob%C3%BAs%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">AUTOBÚS D1 / D</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20Permiso%20B%2BE%20de%20Remolque%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">REMOLQUE B+E</a>
+              <span class="meca-permit-dot"></span>
+            </div>
+          </div>
+
+          <!-- Fila 2: Movimiento hacia la derecha -->
+          <div class="meca-marquee-row row-right">
+            <div class="meca-marquee-group">
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20el%20curso%20CAP%20Inicial%20y%20CAP%20Continuo%20(35h)%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">CAP INICIAL &amp; CONTINUO (35H)</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Necesito%20informaci%C3%B3n%20sobre%20el%20curso%20oficial%20DGT%20de%20Recuperaci%C3%B3n%20de%20Puntos%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">RECUPERACIÓN DE PUNTOS DGT</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20curso%20ADR%20Mercanc%C3%ADas%20Peligrosas%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">ADR MERCANCÍAS PELIGROSAS</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20apuntarme%20al%20Curso%20Oficial%20de%20Carretillero%20de%208%20horas%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">CARRETILLERO OFICIAL UE (8H)</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20los%20Packs%20Ahorro%20con%20Bolsa%20de%20Trabajo%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link">PACKS AHORRO + BOLSA DE TRABAJO</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+              <a href="https://www.google.com/maps/place/Autoescuela+PREMIUM+Gran+V%C3%ADa/@38.3657882,-0.4703143,17z/data=!3m1!4b1!4m6!3m5!1s0xd62370cfde6b2d5:0xf32a2efc9162f692!8m2!3d38.3657882!4d-0.4703143!16s%2Fg%2F1tdfdff9" target="_blank" rel="noopener noreferrer" class="meca-permit-link">AV. PINTOR XAVIER SOLER, 1 · ALICANTE</a>
+              <span class="meca-permit-dot" aria-hidden="true"></span>
+            </div>
+            <!-- Clone Fila 2 -->
+            <div class="meca-marquee-group" aria-hidden="true">
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20el%20curso%20CAP%20Inicial%20y%20CAP%20Continuo%20(35h)%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">CAP INICIAL &amp; CONTINUO (35H)</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Necesito%20informaci%C3%B3n%20sobre%20el%20curso%20oficial%20DGT%20de%20Recuperaci%C3%B3n%20de%20Puntos%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">RECUPERACIÓN DE PUNTOS DGT</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20el%20curso%20ADR%20Mercanc%C3%ADas%20Peligrosas%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">ADR MERCANCÍAS PELIGROSAS</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20apuntarme%20al%20Curso%20Oficial%20de%20Carretillero%20de%208%20horas%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">CARRETILLERO OFICIAL UE (8H)</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20informaci%C3%B3n%20sobre%20los%20Packs%20Ahorro%20con%20Bolsa%20de%20Trabajo%20en%20Alicante." target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">PACKS AHORRO + BOLSA DE TRABAJO</a>
+              <span class="meca-permit-dot"></span>
+              <a href="https://www.google.com/maps/place/Autoescuela+PREMIUM+Gran+V%C3%ADa/@38.3657882,-0.4703143,17z/data=!3m1!4b1!4m6!3m5!1s0xd62370cfde6b2d5:0xf32a2efc9162f692!8m2!3d38.3657882!4d-0.4703143!16s%2Fg%2F1tdfdff9" target="_blank" rel="noopener noreferrer" class="meca-permit-link" tabindex="-1">AV. PINTOR XAVIER SOLER, 1 · ALICANTE</a>
+              <span class="meca-permit-dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           SECCIÓN 3: CENTRO PROFESIONAL DEL TRANSPORTE, PACKS CAP, ADR, CARRETILLERO Y PUNTOS DGT
+           ====================================================================== -->
+      <section class="prof-hub-section" id="profesional">
+        <div class="section-header-center reveal">
+          <span class="section-kicker">CENTRO PROFESIONAL DEL TRANSPORTE &amp; DGT</span>
+          <h2 class="section-headline">Cursos CAP, Packs Ahorro, ADR, Carretillero y Puntos</h2>
+          <p class="section-subtext">Impulsa tu carrera con nuestros packs completos con facilidades de pago y bolsa de empleo, o recupera los puntos de tu carnet en nuestro centro oficial DGT.</p>
+        </div>
+
+        <!-- Banner Destacado: Los 4 Packs Profesionales Ahorro del Dossier -->
+        <div class="packs-banner-highlight reveal">
+          <div class="packs-banner-header">
+            <div>
+              <h3 class="packs-banner-title">Packs Profesionales Ahorro <span>(CAP + Carnets)</span></h3>
+              <p style="font-size:0.9rem; color:rgba(255,255,255,0.85); margin-top:0.25rem;">
+                Ahorra tiempo y dinero con facilidades de pago y acceso directo a nuestra Bolsa de Trabajo en Alicante:
+              </p>
+            </div>
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%F0%9F%9A%9B%20Estoy%20interesado%20en%20vuestros%20Packs%20Ahorro%20(CAP%20%2B%20Permisos%20Profesionales)%20con%20bolsa%20de%20trabajo%20en%20Alicante.%20%C2%BFMe%20pod%C3%A9is%20informar%3F"
+               target="_blank" rel="noopener noreferrer"
+               class="pill-btn-green" style="background:var(--warm-amber);">
+              Pedir Oferta de Packs por WhatsApp
+            </a>
+          </div>
+
+          <div class="packs-4-grid">
+            <div class="pack-item-box">
+              <span class="pack-item-label">PACK 1 · LOGÍSTICA TOTAL</span>
+              <div class="pack-item-name">CAP Inicial + C + E</div>
+              <p class="pack-item-sub">Todo lo necesario para llevar camiones rígidos y vehículos articulados (tráiler).</p>
+            </div>
+            <div class="pack-item-box">
+              <span class="pack-item-label">PACK 2 · ACCESO RÁPIDO</span>
+              <div class="pack-item-name">CAP Inicial + Permiso C</div>
+              <p class="pack-item-sub">Inicia tu carrera en reparto, distribución urbana y camiones rígidos sin límite de peso.</p>
+            </div>
+            <div class="pack-item-box">
+              <span class="pack-item-label">PACK 3 · ESPECIALIZACIÓN</span>
+              <div class="pack-item-name">CAP Inicial + C + ADR</div>
+              <p class="pack-item-sub">Combo de alta demanda para transporte de combustibles, químicos y gases.</p>
+            </div>
+            <div class="pack-item-box">
+              <span class="pack-item-label">PACK 4 · VIAJEROS</span>
+              <div class="pack-item-name">CAP Inicial + Permiso D</div>
+              <p class="pack-item-sub">Oferta especial para convertirte en conductor profesional de autobús en Alicante.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Cards Clean (Grid 2x2): CAP, Recuperación de Puntos DGT, ADR y Carretillero -->
+        <div class="prof-special-grid">
+
+          <!-- 1. Cursos CAP -->
+          <article class="permit-detail-card reveal delay-1">
+            <div>
+              <div class="permit-card-top">
+                <span class="permit-badge-code">CURSOS CAP · MAÑANA Y TARDE</span>
+              </div>
+              <h3 class="permit-detail-title">CAP Inicial, Continuo y Ampliación</h3>
+              <p class="permit-detail-desc" style="margin-bottom:0;">
+                Obtén tu CAP Inicial (140h/280h), renueva cada 5 años sin examen (35h) o amplía entre Mercancías y Viajeros en solo 35h.
+              </p>
+            </div>
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Me%20gustar%C3%ADa%20conocer%20las%20pr%C3%B3ximas%20fechas%20de%20los%20Cursos%20CAP%20(Inicial%2C%20Continuo%2035h%20o%20Ampliaci%C3%B3n)%20en%20Alicante."
+               target="_blank" rel="noopener noreferrer" class="btn-place-book">
+              <span>Reservar Plaza CAP</span>
+              <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- 2. Recuperación de Puntos DGT -->
+          <article class="permit-detail-card reveal delay-2">
+            <div>
+              <div class="permit-card-top">
+                <span class="permit-badge-code" style="background:var(--warm-amber);">CENTRO OFICIAL DGT</span>
+              </div>
+              <h3 class="permit-detail-title">Recuperación de Puntos</h3>
+              <p class="permit-detail-desc" style="margin-bottom:0;">
+                Recupera hasta 6 puntos (12h sin examen) o la vigencia completa de tu permiso (24h) con horarios flexibles en Alicante.
+              </p>
+            </div>
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%E2%9A%A0%EF%B8%8F%20Necesito%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3ximas%20fechas%20y%20precios%20del%20curso%20oficial%20DGT%20de%20Recuperaci%C3%B3n%20de%20Puntos%20en%20Alicante."
+               target="_blank" rel="noopener noreferrer" class="btn-place-book" style="background:var(--warm-amber);">
+              <span>Recuperar mis Puntos</span>
+              <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- 3. ADR Mercancías Peligrosas -->
+          <article class="permit-detail-card reveal delay-3">
+            <div>
+              <div class="permit-card-top">
+                <span class="permit-badge-code">PERMISO ADR · VALIDEZ EUROPEA</span>
+              </div>
+              <h3 class="permit-detail-title">Mercancías Peligrosas (MMPP)</h3>
+              <p class="permit-detail-desc" style="margin-bottom:0;">
+                Obtención inicial y renovación para transportar combustibles, gases y químicos en España y toda la Unión Europea.
+              </p>
+            </div>
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Deseo%20informaci%C3%B3n%20sobre%20el%20curso%20ADR%20de%20Mercanc%C3%ADas%20Peligrosas%20en%20Alicante."
+               target="_blank" rel="noopener noreferrer" class="btn-place-book">
+              <span>Consultar Curso ADR</span>
+              <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+          <!-- 4. Curso Oficial de Carretillero -->
+          <article class="permit-detail-card reveal delay-1">
+            <div>
+              <div class="permit-card-top">
+                <span class="permit-badge-code">CARRETILLERO UE · EN 1 DÍA (8H)</span>
+              </div>
+              <h3 class="permit-detail-title">Carretillas Elevadoras</h3>
+              <p class="permit-detail-desc" style="margin-bottom:0;">
+                Certificado oficial homologado en solo 8 horas lectivas con prácticas de frontal, retráctil y transpaleta.
+              </p>
+            </div>
+            <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20Quiero%20apuntarme%20al%20Curso%20Oficial%20de%20Carretillero%20de%208%20horas%20en%20Alicante."
+               target="_blank" rel="noopener noreferrer" class="btn-place-book">
+              <span>Curso Carretillero (8h)</span>
+              <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           SECCIÓN 4: EL MÉTODO PREMIUM (3 PASOS DIRECTOS)
+           ====================================================================== -->
+      <section class="steps-section" id="proceso">
+        <div class="section-header-center reveal">
+          <span class="section-kicker">PASO A PASO</span>
+          <h2 class="section-headline">Método Eficaz para Aprobar en Tiempo Récord</h2>
+          <p class="section-subtext">Te acompañamos desde el primer test hasta que sales con tu placa 'L' o tu tarjeta profesional CAP en Alicante.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal delay-1">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Teórica con Pilar y Miriam</h3>
+            <p class="step-text">Regístrate online con Matrícula GRATIS en coche o moto. Combina nuestra plataforma de tests 24/7 con clases y reglas mnemotécnicas en nuestra aula informatizada.</p>
+          </div>
+
+          <div class="step-card reveal delay-2">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Prácticas con Juan, Alberto, Ari y Manuel</h3>
+            <p class="step-text">Pierde cualquier miedo al volante en nuestros Volkswagen Golf y motocicletas. En secretaría (Bea, Mónica, María y Mario) cuadramos tus horarios de mañana y tarde.</p>
+          </div>
+
+          <div class="step-card reveal delay-3">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Tu 'L' y Bolsa de Trabajo</h3>
+            <p class="step-text">Aprueba con total seguridad y, si te formas como conductor profesional (CAP, Camión, Tráiler, Autobús o ADR), accede directamente a nuestra propia Bolsa de Trabajo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           SECCIÓN 5: GALERÍA DE ALUMNOS CON SU 'L' (FOTOS REALES DE ASSETS/)
+           ====================================================================== -->
+      <section class="students-gallery-section reveal" id="alumnos-l">
+        <div class="section-header-center">
+          <span class="section-kicker">ORGULLO PREMIUM</span>
+          <h2 class="section-headline">Ya tienen su aprobado, ¿a qué esperas?</h2>
+          <p class="section-subtext">Nuestros alumnos celebrando su placa 'L' oficial junto a nuestros profesores y vehículos en Alicante.</p>
+        </div>
+
+        <div class="gallery-marquee-container" id="galleryMarquee">
+          <div class="gallery-marquee-track">
+            <!-- SET 1 (6 Fotos Reales de Aprobados + Aula de assets/) -->
+            <div class="student-photo-card">
+              <img src="assets/images/students/grupo-aprobados-5.png" alt="Grupo de 5 alumnos aprobados con su placa L frente a Autoescuelas Premium Alicante" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card">
+              <img src="assets/images/students/aprobado-vw-golf.png" alt="Alumno aprobado con su L junto a su profesor y el Volkswagen Golf de prácticas" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card">
+              <img src="assets/images/students/aprobadas-coche-l.png" alt="Dos alumnas aprobadas con su placa L y su instructor junto al coche de Autoescuelas Premium" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card">
+              <img src="assets/images/students/aprobada-fachada-1.png" alt="Alumna aprobada posando con la placa L y su profesor en la fachada de Autoescuelas Premium" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card">
+              <img src="assets/images/students/aprobado-fachada-2.png" alt="Joven alumno aprobado con su placa L en Autoescuelas Premium Alicante" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card">
+              <img src="assets/images/students/pareja-aprobados-l.png" alt="Pareja de jóvenes celebrando su aprobado con la L en Autoescuelas Premium" class="student-pure-img" loading="lazy">
+            </div>
+
+            <!-- SET 2: CLONE PARA LOOP INFINITO FLUIDO -->
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/grupo-aprobados-5.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/aprobado-vw-golf.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/aprobadas-coche-l.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/aprobada-fachada-1.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/aprobado-fachada-2.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+            <div class="student-photo-card" aria-hidden="true">
+              <img src="assets/images/students/pareja-aprobados-l.png" alt="" class="student-pure-img" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-instagram-link-wrap">
+          <a href="https://www.instagram.com/autoescuelaspremium/" target="_blank" rel="noopener noreferrer" class="gallery-instagram-link">
+            <span>Ver más aprobados en nuestro Instagram @autoescuelaspremium</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           SECCIÓN 6: RESEÑAS REALES EN GOOGLE MAPS (6 TESTIMONIOS DEL DOSSIER)
+           ====================================================================== -->
+      <section class="testimonials-section" id="opiniones">
+        <div class="section-header-center reveal">
+          <span class="section-kicker">VALORACIÓN 4,7 ★ EN GOOGLE REVIEWS</span>
+          <h2 class="section-headline">Por Esto Somos PREMIUM</h2>
+          <p class="section-subtext">No lo decimos nosotros, lo dicen los alumnos que ya han aprobado en nuestra sede de Gran Vía Alicante.</p>
+        </div>
+
+        <div class="testimonial-showcase-wrapper reveal">
+          <div class="testimonial-showcase-box" id="testimonialBox">
+
+            <div class="testim-big-quote-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+
+            <div class="testim-slides-container">
+              <!-- 1. Lidia Fernández -->
+              <div class="testim-slide active" data-index="0">
+                <p class="testim-quote-paragraph">
+                  "Empecé las clases teóricas y prácticas con mucha inseguridad y miedos, pero gracias a Juan y Ari poco a poco fui ganando confianza en mí misma. Su paciencia, profesionalidad y forma de enseñar me ayudaron a superar mis miedos y disfrutar del proceso. Hoy puedo decir que he aprobado gracias a ellos. Dos profesores 10."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/students/aprobada-fachada-1.png" alt="Lidia Fernández" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Lidia Fernández</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · Sede Gran Vía</span>
+                </div>
+              </div>
+
+              <!-- 2. Marcos Pérez -->
+              <div class="testim-slide" data-index="1">
+                <p class="testim-quote-paragraph">
+                  "Ya tengo mi carnet de conducir. A la primera tanto la parte teórica como práctica. Darle las gracias a Bea y Mónica en secretaría y cómo no, a Juan, que es un gran profesional."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/students/aprobado-vw-golf.png" alt="Marcos Pérez" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Marcos Pérez</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · Sede Gran Vía</span>
+                </div>
+              </div>
+
+              <!-- 3. Juanma Valverde -->
+              <div class="testim-slide" data-index="2">
+                <p class="testim-quote-paragraph">
+                  "Fui para sacarme el carnet A de moto por una oferta que vi en redes sociales, y me quedé sorprendido por la atención recibida. El trato súper amable y claro, las clases con Manuel fueron muy buenas y se aprendió mucho. MUY recomendable."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/students/aprobado-fachada-2.png" alt="Juanma Valverde" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Juanma Valverde</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · Permiso A Moto</span>
+                </div>
+              </div>
+
+              <!-- 4. Pedro Massanet -->
+              <div class="testim-slide" data-index="3">
+                <p class="testim-quote-paragraph">
+                  "Súper agradecido con la atención de la secretaria María, el director del CAP Inicial Vicente y los profesores. Son muy amables y profesionales. Recomiendo la autoescuela para la obtención de permisos de vehículos pesados y el curso del CAP. GRACIAS."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/students/grupo-aprobados-5.png" alt="Pedro Massanet" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Pedro Massanet</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · CAP y Vehículos Pesados</span>
+                </div>
+              </div>
+
+              <!-- 5. Germán García -->
+              <div class="testim-slide" data-index="4">
+                <p class="testim-quote-paragraph">
+                  "Estoy contento con el curso del CAP de 35 horas. El profesor súper amable y excelente dando el curso... Recomiendo a la autoescuela. Al director y secretaria María mil gracias."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/facilities/aula-teorica.webp" alt="Germán García" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Germán García</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · CAP Continuo 35h</span>
+                </div>
+              </div>
+
+              <!-- 6. Thomas Webb -->
+              <div class="testim-slide" data-index="5">
+                <p class="testim-quote-paragraph">
+                  "Ya tengo la L. Mario el de recepción un magnífico profesional y siempre con una gran sonrisa. Y el profesor Juan un fenómeno enseñando, sin duda la mejor autoescuela."
+                </p>
+                <div class="testim-author-wrap">
+                  <img src="assets/images/students/pareja-aprobados-l.png" alt="Thomas Webb" class="testim-avatar-img">
+                  <h3 class="testim-author-name">Thomas Webb</h3>
+                  <span class="testim-author-sub">★★★★★ Reseña en Google · Sede Gran Vía</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="testim-nav-arrow testim-arrow-prev" id="testimPrevBtn" aria-label="Opinión anterior">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="testim-nav-arrow testim-arrow-next" id="testimNextBtn" aria-label="Siguiente opinión">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+            <div class="testim-indicators" id="testimDots">
+              <button class="testim-dot active" data-slide="0" aria-label="Ir a opinión 1"></button>
+              <button class="testim-dot" data-slide="1" aria-label="Ir a opinión 2"></button>
+              <button class="testim-dot" data-slide="2" aria-label="Ir a opinión 3"></button>
+              <button class="testim-dot" data-slide="3" aria-label="Ir a opinión 4"></button>
+              <button class="testim-dot" data-slide="4" aria-label="Ir a opinión 5"></button>
+              <button class="testim-dot" data-slide="5" aria-label="Ir a opinión 6"></button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CARD BANNER DE CONTACTO Y UBICACIÓN EN GRAN VÍA ALICANTE
+           ====================================================================== -->
+      <section class="contact-card-banner reveal" id="contacto">
+        <div>
+          <h2 class="contact-banner-title">¡Ven a visitarnos a Gran Vía o llámanos gratis!</h2>
+          <p class="contact-banner-desc">
+            Confía en nuestro equipo y descubrirás por qué somos Premium. Te esperamos en nuestra sede de Alicante o te atendemos al instante por WhatsApp y teléfono gratuito.
+          </p>
+
+          <div class="contact-info-clean">
+            <div class="contact-info-row">
+              <span class="contact-row-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </span>
+              <div class="contact-row-text">
+                <span class="contact-row-title">Avenida Pintor Xavier Soler, 1, Local 3</span>
+                <span class="contact-row-sub">03015 Alicante (Zona Gran Vía / Vistahermosa)</span>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <span class="contact-row-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </span>
+              <div class="contact-row-text">
+                <span class="contact-row-title">
+                  <a href="tel:+34965243528">965 24 35 28</a> · Línea Gratuita: <a href="tel:+34900696596">900 696 596</a>
+                </span>
+                <span class="contact-row-sub">Email: gestionautoescuelaspremium@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <span class="contact-row-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </span>
+              <div class="contact-row-text">
+                <span class="contact-row-title">Lunes a Viernes: 10:00–13:30 y 17:00–20:30</span>
+                <span class="contact-row-sub">Horario presencial de secretaría y aula teórica en Gran Vía</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-banner-actions">
+          <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%F0%9F%91%8B%20Quisiera%20informarme%20sobre%20plazas%2C%20horarios%20y%20la%20Matr%C3%ADcula%20GRATIS%20online%20en%20Alicante."
+             class="pill-btn-green contact-btn-wa"
+             target="_blank"
+             rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.21 8.21 0 0 1-5.82 2.41h-.01c-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.196 8.196 0 0 1-1.26-4.47c0-4.54 3.7-8.25 8.24-8.25m4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.09 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3"/></svg>
+            <span>Hablar por WhatsApp</span>
+          </a>
+
+          <a href="tel:+34900696596" class="btn-maps-high-contrast" style="border-color:var(--lime-vibrant); color:var(--lime-vibrant);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>Llamar Gratis: 900 696 596</span>
+          </a>
+
+          <a href="https://www.google.com/maps/place/Autoescuela+PREMIUM+Gran+V%C3%ADa/@38.3657882,-0.4703143,17z/data=!3m1!4b1!4m6!3m5!1s0xd62370cfde6b2d5:0xf32a2efc9162f692!8m2!3d38.3657882!4d-0.4703143!16s%2Fg%2F1tdfdff9"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn-maps-high-contrast">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F24406" style="flex-shrink:0;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Ver en Google Maps</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="card-footer">
+        <p>© <span id="year">2026</span> <strong>Autoescuelas PREMIUM Alicante</strong> · FORMACIÓN VIAL XENON, S.L.U. (NIF B54756754) · Av. Pintor Xavier Soler, 1, Local 3, 03015 Alicante.</p>
+        <div class="footer-social-links">
+          <a href="tel:+34965243528">Tel: 965 24 35 28</a>
+          <a href="https://www.instagram.com/autoescuelaspremium/" target="_blank" rel="noopener noreferrer">Instagram (@autoescuelaspremium)</a>
+        </div>
+      </footer>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/34965243528?text=%C2%A1Hola%20Autoescuelas%20Premium!%20%F0%9F%91%8B%20Quiero%20hacer%20una%20consulta%20sobre%20vuestros%20permisos%20y%20cursos%20en%20Alicante"
+     class="mobile-float-wa"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp con Autoescuelas Premium Alicante">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.21 8.21 0 0 1-5.82 2.41h-.01c-1.42 0-2.82-.37-4.06-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.196 8.196 0 0 1-1.26-4.47c0-4.54 3.7-8.25 8.24-8.25m4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.09 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.71 4.3 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3"/></svg>
+  </a>
+
+  <!-- ========================================================================
+       SCRIPTS: MOTION & INTERACCIÓN MOBILE (IDÉNTICO AL MOTOR DE FLEMING)
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      const drawer = document.getElementById('mobileDrawer');
+      if (menuBtn && drawer) {
+        menuBtn.addEventListener('click', function () {
+          const isOpen = drawer.classList.contains('open');
+          drawer.classList.toggle('open');
+          menuBtn.classList.toggle('active');
+          menuBtn.setAttribute('aria-expanded', !isOpen);
+        });
+
+        drawer.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            drawer.classList.remove('open');
+            menuBtn.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        reveals.forEach(el => revealObserver.observe(el));
+      } else {
+        reveals.forEach(el => el.classList.add('active'));
+      }
+
+      const testimSlides = document.querySelectorAll('.testim-slide');
+      const testimDots = document.querySelectorAll('.testim-dot');
+      const testimPrevBtn = document.getElementById('testimPrevBtn');
+      const testimNextBtn = document.getElementById('testimNextBtn');
+      const testimBox = document.getElementById('testimonialBox');
+
+      if (testimSlides.length > 0) {
+        let currentTestimIndex = 0;
+        let testimTimer = null;
+        const totalTestim = testimSlides.length;
+        const AUTO_INTERVAL = 4800;
+
+        function showTestim(index) {
+          if (index < 0) index = totalTestim - 1;
+          if (index >= totalTestim) index = 0;
+          currentTestimIndex = index;
+
+          testimSlides.forEach((slide, idx) => {
+            if (idx === index) {
+              slide.classList.add('active');
+            } else {
+              slide.classList.remove('active');
+            }
+          });
+
+          testimDots.forEach((dot, idx) => {
+            if (idx === index) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+
+        function nextTestim() {
+          showTestim(currentTestimIndex + 1);
+        }
+
+        function prevTestim() {
+          showTestim(currentTestimIndex - 1);
+        }
+
+        function startAutoPlay() {
+          stopAutoPlay();
+          testimTimer = setInterval(nextTestim, AUTO_INTERVAL);
+        }
+
+        function stopAutoPlay() {
+          if (testimTimer) {
+            clearInterval(testimTimer);
+            testimTimer = null;
+          }
+        }
+
+        startAutoPlay();
+
+        if (testimBox) {
+          testimBox.addEventListener('mouseenter', stopAutoPlay);
+          testimBox.addEventListener('mouseleave', startAutoPlay);
+
+          let touchStartX = 0;
+          let touchEndX = 0;
+          testimBox.addEventListener('touchstart', e => {
+            stopAutoPlay();
+            touchStartX = e.changedTouches[0].screenX;
+          }, { passive: true });
+          testimBox.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 45) {
+              nextTestim();
+            } else if (touchEndX - touchStartX > 45) {
+              prevTestim();
+            }
+            startAutoPlay();
+          }, { passive: true });
+        }
+
+        if (testimPrevBtn) {
+          testimPrevBtn.addEventListener('click', () => {
+            prevTestim();
+            startAutoPlay();
+          });
+        }
+        if (testimNextBtn) {
+          testimNextBtn.addEventListener('click', () => {
+            nextTestim();
+            startAutoPlay();
+          });
+        }
+
+        testimDots.forEach((dot, idx) => {
+          dot.addEventListener('click', () => {
+            showTestim(idx);
+            startAutoPlay();
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
